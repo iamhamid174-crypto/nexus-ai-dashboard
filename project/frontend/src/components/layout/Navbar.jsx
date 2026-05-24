@@ -29,7 +29,7 @@ export default function Navbar() {
   const { user } = useAuth()
   const location = useLocation()
 
-  const pageInfo = PAGE_TITLES[location.pathname] || { title: 'SAAS Dashboard', sub: '' }
+  const pageInfo = PAGE_TITLES[location.pathname] || { title: 'AI SAAS Dashboard', sub: '' }
 
   return (
     <header

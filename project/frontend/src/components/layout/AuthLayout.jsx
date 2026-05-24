@@ -24,7 +24,7 @@ export default function AuthLayout() {
             <div className="w-10 h-10 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center">
               <FiZap size={20} className="text-white" />
             </div>
-            <span className="font-display font-bold text-white text-xl">SAAS Dashboard</span>
+            <span className="font-display font-bold text-white text-xl">AI SAAS Dashboard</span>
           </div>
 
           {/* Hero text */}
@@ -70,7 +70,7 @@ export default function AuthLayout() {
             className="bg-white/10 backdrop-blur rounded-2xl p-5"
           >
             <p className="text-white/80 text-sm italic leading-relaxed">
-              "SAAS Dashboard helps our team stay on top of projects, billing, and weekly activity without switching tools."
+              "AI SAAS Dashboard helps our team stay on top of projects, billing, and weekly activity without switching tools."
             </p>
             <div className="flex items-center gap-2 mt-3">
               <div className="w-7 h-7 rounded-full bg-white/30 flex items-center justify-center text-xs font-bold text-white">SR</div>

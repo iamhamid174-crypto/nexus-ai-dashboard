@@ -1,4 +1,4 @@
-# SAAS Dashboard
+# AI SAAS Dashboard
 
 A production-ready, full-stack SaaS Dashboard built with **React 19 + Vite** (frontend) and **Node.js + Express + MongoDB** (backend).
 

@@ -34,14 +34,14 @@ export default function RegisterPage() {
     setLoading(true)
     try {
       await dispatch(registerUser(form)).unwrap()
-      toast.success('Account created!', 'Welcome to SAAS Dashboard.')
+      toast.success('Account created!', 'Welcome to AI SAAS Dashboard.')
     } catch {
       // Demo mode
       const demoUser = { ...MOCK_USER, name: form.name, email: form.email }
       dispatch(setCredentials({ user: demoUser, token: 'demo-token-001' }))
       localStorage.setItem('saas_token', 'demo-token-001')
       localStorage.setItem('saas_user', JSON.stringify(demoUser))
-      toast.success('Welcome to SAAS Dashboard!', 'Account created in demo mode.')
+      toast.success('Welcome to AI SAAS Dashboard!', 'Account created in demo mode.')
     } finally {
       setLoading(false)
     }

@@ -9,7 +9,7 @@ exports.getNotifications = async (req, res, next) => {
     if (userId === 'demo-user-001') {
       return sendSuccess(res, {
         notifications: [
-          { _id: 'n1', type: 'success', title: 'Welcome to SAAS Dashboard!', message: 'Your account is ready.', isRead: false, createdAt: new Date() },
+          { _id: 'n1', type: 'success', title: 'Welcome to AI SAAS Dashboard!', message: 'Your account is ready.', isRead: false, createdAt: new Date() },
           { _id: 'n2', type: 'billing', title: 'Payment Successful', message: 'Pro plan activated.', isRead: false, createdAt: new Date(Date.now() - 3600000) },
           { _id: 'n3', type: 'project', title: 'Project Updated', message: 'Dashboard Redesign is 75% complete.', isRead: true, createdAt: new Date(Date.now() - 86400000) },
         ],

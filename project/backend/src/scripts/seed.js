@@ -58,7 +58,7 @@ const seed = async () => {
 
   // Notifications
   await Notification.insertMany([
-    { user: admin._id, type: 'success', title: 'Welcome to SAAS Dashboard!', message: 'Your account is ready. Explore the dashboard features.', isRead: false },
+    { user: admin._id, type: 'success', title: 'Welcome to AI SAAS Dashboard!', message: 'Your account is ready. Explore the dashboard features.', isRead: false },
     { user: admin._id, type: 'billing', title: 'Invoice #INV-001 Paid', message: 'Your December subscription has been charged.', isRead: false },
     { user: admin._id, type: 'project', title: 'Project Milestone', message: 'Analytics Dashboard reached 85% completion.', isRead: true },
     { user: admin._id, type: 'info', title: 'New Feature: Code Assistant', message: 'Try the updated Code Assistant with GPT-4 support.', isRead: true },

@@ -17,7 +17,7 @@ Here's what I wish I'd known before building an AI SaaS:
 
 3. Speed of learning > speed of shipping. Talk to 5 users before writing a single line of code.
 
-Teams using SAAS Dashboard save time by keeping tasks, reports, and approvals in one place.
+Teams using AI SAAS Dashboard save time by keeping tasks, reports, and approvals in one place.
 
 What's the biggest lesson your product journey has taught you? ↓
 
@@ -33,7 +33,7 @@ We might already be building the solution 👇`,
 
   'Instagram': `24,000 teams can't be wrong ✨
 
-We built SAAS Dashboard to solve one problem: operational work gets scattered across too many tools.
+We built AI SAAS Dashboard to solve one problem: operational work gets scattered across too many tools.
 
 Now our users are:
 → 3x-ing their content output

@@ -121,7 +121,7 @@ export default function SettingsPage() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }}>
         <h1 className="text-2xl font-bold text-surface-900 dark:text-white">Settings</h1>
-        <p className="text-surface-500 dark:text-surface-400 mt-1">Customize your SAAS Dashboard experience.</p>
+        <p className="text-surface-500 dark:text-surface-400 mt-1">Customize your AI SAAS Dashboard experience.</p>
       </motion.div>
 
       {/* Appearance */}
@@ -270,7 +270,7 @@ export default function SettingsPage() {
           <SettingRow icon={FiBell} title="Show Activity Status" description="Let team members see when you're active.">
             <Toggle checked={privacy.show_activity} onChange={toggle('show_activity', setPrivacy)} />
           </SettingRow>
-          <SettingRow icon={FiDatabase} title="Analytics Sharing" description="Help improve SAAS Dashboard by sharing anonymous usage data.">
+          <SettingRow icon={FiDatabase} title="Analytics Sharing" description="Help improve AI SAAS Dashboard by sharing anonymous usage data.">
             <Toggle checked={privacy.analytics_sharing} onChange={toggle('analytics_sharing', setPrivacy)} />
           </SettingRow>
           <SettingRow icon={FiDatabase} title="Crash Reports" description="Automatically send crash reports to help fix bugs faster.">

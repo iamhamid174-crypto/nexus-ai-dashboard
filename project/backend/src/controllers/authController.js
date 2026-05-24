@@ -99,7 +99,7 @@ exports.forgotPassword = async (req, res, next) => {
     const resetUrl = `${process.env.CLIENT_URL}/auth/reset-password?token=${rawToken}`;
     const html = `
       <div style="font-family:sans-serif;max-width:500px;margin:auto;padding:24px">
-        <h2 style="color:#6366f1">SAAS Dashboard - Password Reset</h2>
+        <h2 style="color:#6366f1">AI SAAS Dashboard - Password Reset</h2>
         <p>You requested a password reset. Click the link below (valid for 10 minutes):</p>
         <a href="${resetUrl}" style="display:inline-block;padding:12px 24px;background:#6366f1;color:white;border-radius:8px;text-decoration:none;margin:16px 0">
           Reset Password
@@ -109,7 +109,7 @@ exports.forgotPassword = async (req, res, next) => {
     `;
 
     try {
-      await sendEmail({ to: user.email, subject: 'SAAS Dashboard - Password Reset Request', html });
+      await sendEmail({ to: user.email, subject: 'AI SAAS Dashboard - Password Reset Request', html });
     } catch (emailErr) {
       logger.error(`Failed to send reset email: ${emailErr.message}`);
       user.resetPasswordToken = undefined;

@@ -86,7 +86,7 @@ app.use('/api/subscriptions', subscriptionsRouter);
 app.get('/api/health', (req, res) => {
   res.json({
     success: true,
-    message: 'SAAS Dashboard API is running',
+    message: 'AI SAAS Dashboard API is running',
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'development',
     version: '1.0.0',
@@ -114,7 +114,7 @@ process.on('SIGTERM', () => {
 
 /* ─── Start server ────────────────────────────────────────────── */
 const server = app.listen(PORT, () => {
-  logger.info(`🚀 SAAS Dashboard API running on port ${PORT} [${process.env.NODE_ENV || 'development'}]`);
+  logger.info(`🚀 AI SAAS Dashboard API running on port ${PORT} [${process.env.NODE_ENV || 'development'}]`);
 });
 
 module.exports = app;

@@ -1,7 +1,7 @@
-{
+﻿{
   "name": "saas-dashboard-backend",
   "version": "1.0.0",
-  "description": "SAAS Dashboard - Express/MongoDB API",
+  "description": "AI SAAS Dashboard - Express/MongoDB API",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
