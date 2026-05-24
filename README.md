@@ -1,4 +1,4 @@
-# SAAS Dashboard
+# AI SAAS Dashboard
 
 Full-stack SaaS dashboard starter.
 
