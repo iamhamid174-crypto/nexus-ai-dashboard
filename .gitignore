@@ -1,0 +1,20 @@
+.vercel
+
+# dependencies
+**/node_modules/
+
+# env files
+**/.env
+**/.env.*
+!**/.env.example
+
+# logs
+**/*.log
+
+# uploads (local dev)
+project/backend/uploads/
+
+# misc
+.DS_Store
+Thumbs.db
+repo_git/
