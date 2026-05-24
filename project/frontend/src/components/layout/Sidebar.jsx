@@ -178,7 +178,7 @@ export default function Sidebar() {
                 {getInitials(user?.name || 'U')}
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-xs font-semibold text-surface-900 dark:text-surface-100 truncate">{user?.name || 'Demo User'}</p>
+                <p className="text-xs font-semibold text-surface-900 dark:text-surface-100 truncate">{user?.name || 'Account'}</p>
                 <p className="text-[10px] text-surface-400 truncate">{user?.plan || 'pro'} plan</p>
               </div>
               <button

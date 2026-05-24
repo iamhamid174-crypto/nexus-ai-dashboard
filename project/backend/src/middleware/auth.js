@@ -23,8 +23,8 @@ exports.protect = async (req, res, next) => {
   if (token === 'demo-token-001' && process.env.NODE_ENV !== 'production') {
     req.user = {
       _id: 'demo-user-001',
-      name: 'Alex Johnson',
-      email: 'alex@example.com',
+      name: 'Sample User',
+      email: 'demo@example.com',
       role: 'user',
       plan: 'pro',
     };

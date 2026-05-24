@@ -64,7 +64,7 @@ export default function RegisterPage() {
           <label className="block text-xs font-semibold text-surface-400 uppercase tracking-wider mb-2">Full Name</label>
           <div className="relative">
             <FiUser size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-surface-500" />
-            <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="Alex Morgan"
+            <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="Your name"
               className="input-field pl-10 bg-surface-800/60 border-surface-700 text-surface-100 placeholder-surface-600" />
           </div>
         </div>

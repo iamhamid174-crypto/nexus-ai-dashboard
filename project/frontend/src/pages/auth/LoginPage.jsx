@@ -41,7 +41,7 @@ export default function LoginPage() {
     dispatch(setCredentials({ user: MOCK_USER, token: 'demo-token-001' }))
     localStorage.setItem('saas_token', 'demo-token-001')
     localStorage.setItem('saas_user', JSON.stringify(MOCK_USER))
-    toast.success('Demo mode!', 'Exploring AI SAAS Dashboard with sample data.')
+    toast.success('Signed in', 'Using sample data (demo mode).')
   }
 
   const fields = [

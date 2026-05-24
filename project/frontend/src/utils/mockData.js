@@ -2,8 +2,8 @@
 
 export const MOCK_USER = {
   _id: 'demo-user-001',
-  name: 'Alex Morgan',
-  email: 'alex@example.com',
+  name: 'Workspace Admin',
+  email: 'admin@example.com',
   role: 'admin',
   avatar: null,
   plan: 'pro',
@@ -79,14 +79,14 @@ export const MOCK_NOTIFICATIONS = [
   { _id: 'n1', title: 'Subscription Renewed', message: 'Your Pro plan has been renewed for another month.', type: 'success', read: false, createdAt: new Date(Date.now() - 1000 * 60 * 5).toISOString() },
   { _id: 'n2', title: 'AI Usage Alert', message: "You've used 80% of your monthly AI credits.", type: 'warning', read: false, createdAt: new Date(Date.now() - 1000 * 60 * 30).toISOString() },
   { _id: 'n3', title: 'Project Completed', message: 'Customer Support Bot project has been marked complete.', type: 'info', read: false, createdAt: new Date(Date.now() - 1000 * 60 * 60).toISOString() },
-  { _id: 'n4', title: 'New Team Member', message: 'Sarah Chen joined your workspace.', type: 'info', read: true, createdAt: new Date(Date.now() - 1000 * 60 * 60 * 3).toISOString() },
+  { _id: 'n4', title: 'New Team Member', message: 'A new teammate joined your workspace.', type: 'info', read: true, createdAt: new Date(Date.now() - 1000 * 60 * 60 * 3).toISOString() },
   { _id: 'n5', title: 'Report Ready', message: 'Your November analytics report is now available.', type: 'success', read: true, createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24).toISOString() },
 ]
 
 export const MOCK_ACTIVITY = [
-  { id: 'a1', action: 'Created project', subject: 'Visual Brand Assets', user: 'Alex Morgan', time: '5 min ago', type: 'project' },
-  { id: 'a2', action: 'Generated content for', subject: 'Marketing Campaign Q4', user: 'Alex Morgan', time: '22 min ago', type: 'ai' },
-  { id: 'a3', action: 'Invited', subject: 'sarah@example.com', user: 'Alex Morgan', time: '1 hr ago', type: 'user' },
+  { id: 'a1', action: 'Created project', subject: 'Visual Brand Assets', user: 'You', time: '5 min ago', type: 'project' },
+  { id: 'a2', action: 'Generated content for', subject: 'Marketing Campaign Q4', user: 'You', time: '22 min ago', type: 'ai' },
+  { id: 'a3', action: 'Invited', subject: 'teammate@example.com', user: 'You', time: '1 hr ago', type: 'user' },
   { id: 'a4', action: 'Completed project', subject: 'Customer Support Bot', user: 'System', time: '3 hr ago', type: 'project' },
-  { id: 'a5', action: 'Upgraded plan to', subject: 'Pro Annual', user: 'Alex Morgan', time: '1 day ago', type: 'billing' },
+  { id: 'a5', action: 'Upgraded plan to', subject: 'Pro Annual', user: 'You', time: '1 day ago', type: 'billing' },
 ]

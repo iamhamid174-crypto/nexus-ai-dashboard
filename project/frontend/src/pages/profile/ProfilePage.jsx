@@ -75,10 +75,10 @@ export default function ProfilePage() {
   const fileInputRef = useRef(null);
 
   const [profileData, setProfileData] = useState({
-    name: user?.name || 'Alex Johnson',
+    name: user?.name || '',
     email: user?.email || 'alex@example.com',
-    phone: user?.phone || '+1 (555) 000-0000',
-    location: user?.location || 'San Francisco, CA',
+    phone: user?.phone || '',
+    location: user?.location || '',
     website: user?.website || 'https://alexjohnson.dev',
     bio: user?.bio || 'Full-stack developer passionate about AI-powered tools and automation.',
     avatar: user?.avatar || null,
@@ -315,8 +315,8 @@ export default function ProfilePage() {
 
           <Section title="Active Sessions" subtitle="Manage devices where you're currently signed in.">
             {[
-              { device: 'MacBook Pro 16"', location: 'San Francisco, CA', time: 'Current session', current: true },
-              { device: 'iPhone 15 Pro', location: 'San Francisco, CA', time: '2 hours ago', current: false },
+              { device: 'MacBook Pro 16"', location: 'United States', time: 'Current session', current: true },
+              { device: 'iPhone 15 Pro', location: 'United States', time: '2 hours ago', current: false },
               { device: 'Chrome on Windows', location: 'New York, NY', time: '3 days ago', current: false },
             ].map((session, i) => (
               <div key={i} className="flex items-center justify-between py-3 border-b border-surface-100 dark:border-surface-800 last:border-0">

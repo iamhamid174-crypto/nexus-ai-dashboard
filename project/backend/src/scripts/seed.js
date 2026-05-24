@@ -21,22 +21,22 @@ const seed = async () => {
 
   // Create admin user
   const admin = await User.create({
-    name: 'Alex Johnson',
+    name: 'Administrator',
     email: 'admin@example.com',
-    password: 'Admin123!',
+    password: 'ChangeMe123!',
     role: 'admin',
     plan: 'pro',
     isEmailVerified: true,
-    phone: '+1 (555) 000-0001',
-    location: 'San Francisco, CA',
-    bio: 'Platform administrator and lead developer.',
+    phone: '',
+    location: '',
+    bio: '',
   });
 
   // Demo user
   const demoUser = await User.create({
-    name: 'Demo User',
+    name: 'Sample User',
     email: 'demo@example.com',
-    password: 'Demo1234!',
+    password: 'ChangeMe123!',
     plan: 'pro',
     isEmailVerified: true,
   });
@@ -59,20 +59,20 @@ const seed = async () => {
   // Notifications
   await Notification.insertMany([
     { user: admin._id, type: 'success', title: 'Welcome to AI SAAS Dashboard!', message: 'Your account is ready. Explore the dashboard features.', isRead: false },
-    { user: admin._id, type: 'billing', title: 'Invoice #INV-001 Paid', message: 'Your December subscription has been charged.', isRead: false },
+    { user: admin._id, type: 'billing', title: 'Invoice Paid', message: 'Your subscription has been charged successfully.', isRead: false },
     { user: admin._id, type: 'project', title: 'Project Milestone', message: 'Analytics Dashboard reached 85% completion.', isRead: true },
-    { user: admin._id, type: 'info', title: 'New Feature: Code Assistant', message: 'Try the updated Code Assistant with GPT-4 support.', isRead: true },
+    { user: admin._id, type: 'info', title: 'New Feature: Code Assistant', message: 'Try the updated Code Assistant with expanded capabilities.', isRead: true },
   ]);
 
   console.log('✅ Database seeded successfully!');
   console.log('');
   console.log('Admin credentials:');
   console.log('  Email:    admin@example.com');
-  console.log('  Password: Admin123!');
+  console.log('  Password: ChangeMe123!');
   console.log('');
   console.log('Demo credentials:');
   console.log('  Email:    demo@example.com');
-  console.log('  Password: Demo1234!');
+  console.log('  Password: ChangeMe123!');
 
   await mongoose.disconnect();
   process.exit(0);

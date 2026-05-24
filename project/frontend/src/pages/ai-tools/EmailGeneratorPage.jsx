@@ -16,14 +16,14 @@ I work with SaaS teams like yours to 3x content output without adding headcount.
 
 I thought it might be relevant given where you're scaling. Would you be open to a 20-minute call this week to see if it's a fit?
 
-Here's my calendar: [calendly.com/link]
+Here’s a link to schedule time: [scheduling link]
 
 Either way, happy to share some of the case studies from similar companies if helpful.
 
 Best,
-Alex Morgan
-Head of Growth, AI SAAS Dashboard
-alex@example.com | (555) 012-3456`
+[Your Name]
+[Your Title], [Company]
+[your@email.com] | [phone]`
 
 export default function EmailGeneratorPage() {
   const [form, setForm] = useState({
@@ -77,11 +77,11 @@ export default function EmailGeneratorPage() {
       <div className="grid grid-cols-2 gap-3">
         <div>
           <label className="block text-xs font-semibold text-surface-500 uppercase tracking-wider mb-1.5">Your Name</label>
-          <input className="input-field" value={form.senderName} onChange={(e) => set('senderName', e.target.value)} placeholder="Alex Morgan" />
+          <input className="input-field" value={form.senderName} onChange={(e) => set('senderName', e.target.value)} placeholder="Your name" />
         </div>
         <div>
           <label className="block text-xs font-semibold text-surface-500 uppercase tracking-wider mb-1.5">Your Role</label>
-          <input className="input-field" value={form.senderRole} onChange={(e) => set('senderRole', e.target.value)} placeholder="Head of Growth" />
+          <input className="input-field" value={form.senderRole} onChange={(e) => set('senderRole', e.target.value)} placeholder="Your title" />
         </div>
       </div>
 
