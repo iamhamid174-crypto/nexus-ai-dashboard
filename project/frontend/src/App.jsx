@@ -89,11 +89,11 @@ export default function App() {
         <Route path="settings" element={<SettingsPage />} />
 
         {/* AI Tools */}
-        <Route path="ai/content" element={<ContentGeneratorPage />} />
-        <Route path="ai/email" element={<EmailGeneratorPage />} />
-        <Route path="ai/social" element={<SocialMediaPage />} />
-        <Route path="ai/code" element={<CodeAssistantPage />} />
-        <Route path="ai/image-prompt" element={<ImagePromptPage />} />
+        <Route path="ai-tools/content" element={<ContentGeneratorPage />} />
+        <Route path="ai-tools/email" element={<EmailGeneratorPage />} />
+        <Route path="ai-tools/social" element={<SocialMediaPage />} />
+        <Route path="ai-tools/code" element={<CodeAssistantPage />} />
+        <Route path="ai-tools/image" element={<ImagePromptPage />} />
       </Route>
 
       {/* 404 */}
